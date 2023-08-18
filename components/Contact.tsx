@@ -2,12 +2,12 @@
 
 const ContactSection = () => {
   return (
-    <section className="bg-white py-16">
+    <section className=" py-16">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-4 text-center">Contact Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-foreground leading-relaxed">
               Have questions or ready to book your next adventure? Get in touch
               with us!
             </p>
