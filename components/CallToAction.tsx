@@ -1,4 +1,4 @@
-const CallToAction = () => {
+const CallToActionSection = () => {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-indigo-500 py-12">
       <div className="container mx-auto text-center">
@@ -17,4 +17,4 @@ const CallToAction = () => {
   );
 };
 
-export default CallToAction;
+export default CallToActionSection;
