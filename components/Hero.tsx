@@ -1,4 +1,5 @@
 import AboutSection from "./About";
+import CallToAction from "./CallToAction";
 import ContactSection from "./Contact";
 import ServicesSection from "./Services";
 
@@ -8,6 +9,7 @@ const Hero = () => {
       <ServicesSection />
       <AboutSection />
       <ContactSection />
+      <CallToAction />
     </div>
   );
 };

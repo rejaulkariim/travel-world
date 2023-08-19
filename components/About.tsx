@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const AboutSection = () => {
   return (
     <section className="py-16">
@@ -9,10 +11,12 @@ const AboutSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="mb-4">
-            <img
-              src="/images/about.jpg"
-              alt="About Us"
-              className="rounded-lg shadow-md"
+            <Image
+              src="https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg?auto=compress&cs=tinysrgb&w=600"
+              height={300}
+              width={300}
+              alt="travel"
+              className="w-full object-cover rounded-lg"
             />
           </div>
           <div>
