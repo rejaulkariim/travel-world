@@ -1,6 +1,6 @@
 const CallToActionSection = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-indigo-500 py-12">
+    <div className="bg-gradient-to-r from-blue-500 to-indigo-500 py-12 rounded-lg">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold text-white mb-4">
           Ready to Embark on Your Next Adventure?

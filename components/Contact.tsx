@@ -19,7 +19,9 @@ const ContactSection = () => {
             <ul className="mt-4 text-gray-700 list-disc list-inside">
               <li>Phone: [Your Phone Number]</li>
               <li>Email: [Your Email Address]</li>
-              <li>Visit Us: [Your Address]</li>
+              <li>
+                Visit Us: 3, Jln PJS 8/9, Bandar Sunway, Petaling Jaya, Malaysia
+              </li>
             </ul>
           </div>
           <div>

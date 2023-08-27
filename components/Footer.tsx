@@ -1,5 +1,9 @@
 "use client";
 
+import Link from "next/link";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { BsFacebook } from "react-icons/bs";
+
 const Footer = () => {
   return (
     <footer className="text-foreground py-12">
@@ -16,32 +20,26 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <p className="text-gray-400">
-              Phone: [Your Phone Number]
+              Phone: +60 3-7865 4166
               <br />
-              Email: [Your Email Address]
+              Email: miahworld53@gmail.com
             </p>
           </div>
           <div className="md:text-center">
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex justify-center space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
+              <Link
+                href="https://www.facebook.com/miahworld1102"
+                target="_blank"
               >
-                <i className="fab fa-facebook text-xl"></i>
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
+                <BsFacebook size={20} />
+              </Link>
+              <Link
+                href="https://www.facebook.com/miahworld1102"
+                target="_blank"
               >
-                <i className="fab fa-twitter text-xl"></i>
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
-              >
-                <i className="fab fa-instagram text-xl"></i>
-              </a>
+                <BiLogoInstagramAlt size={25} />
+              </Link>
             </div>
           </div>
         </div>
