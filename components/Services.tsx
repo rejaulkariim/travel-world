@@ -29,7 +29,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className=" py-16">
+    <section id="services" className=" py-16">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8 text-center">
           Our Services
@@ -41,7 +41,9 @@ const ServicesSection = () => {
                 <i className={service.icon}></i>
               </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-700 text-center">{service.description}</p>
+              <p className="text-foreground text-center">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>

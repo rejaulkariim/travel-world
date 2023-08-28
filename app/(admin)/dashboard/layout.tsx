@@ -1,4 +1,7 @@
 import { ModeToggle } from "@/components/ModeToggle";
+import Sidebar from "@/components/Sidebar";
+
+import { BiSolidUserCircle } from "react-icons/bi";
 
 export default function RootLayout({
   children,
@@ -10,6 +13,7 @@ export default function RootLayout({
       {/* DASHBOARD SIDEBAR NAVIGATION */}
       <div className="hidden md:block col-span-1 min-h-screen border-r">
         <div className="sticky top-0">
+          <Sidebar />
           {/* <DashboardSidebarNav items={dashboardConfig.sidebarNav} /> */}
         </div>
       </div>
@@ -33,6 +37,7 @@ export default function RootLayout({
             email: user.email,
           }}
         /> */}
+            <BiSolidUserCircle size={30} />
           </div>
         </header>
 

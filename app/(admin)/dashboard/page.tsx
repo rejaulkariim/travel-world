@@ -1,5 +1,9 @@
 const page = () => {
-  return <div className="mt-20">page</div>;
+  return (
+    <div>
+      <h2>Welcome to admin dashboard</h2>
+    </div>
+  );
 };
 
 export default page;
