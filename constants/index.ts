@@ -73,3 +73,46 @@ export const guides = [
       "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1600",
   },
 ];
+
+export const sliders = [
+  {
+    id: 1,
+    image:
+      "https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    title: "Slide 1 Title",
+    subtitle: "Slide 1 Subtitle",
+    buttonLabel: "Learn More",
+  },
+  {
+    id: 1,
+    image:
+      "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    title: "Slide 1 Title",
+    subtitle: "Slide 1 Subtitle",
+    buttonLabel: "Learn More",
+  },
+  {
+    id: 1,
+    image:
+      "https://images.pexels.com/photos/2577274/pexels-photo-2577274.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    title: "Slide 1 Title",
+    subtitle: "Slide 1 Subtitle",
+    buttonLabel: "Learn More",
+  },
+  {
+    id: 1,
+    image:
+      "https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    title: "Slide 1 Title",
+    subtitle: "Slide 1 Subtitle",
+    buttonLabel: "Learn More",
+  },
+  {
+    id: 1,
+    image:
+      "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    title: "Slide 1 Title",
+    subtitle: "Slide 1 Subtitle",
+    buttonLabel: "Learn More",
+  },
+];

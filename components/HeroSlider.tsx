@@ -1,52 +1,49 @@
 "use client";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-// Import required modules
 import Image from "next/image";
-import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { sliders } from "../constants";
 
 const HeroSlider = () => {
-  const sliderDatas = [
-    {
-      id: 1,
-      image:
-        "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    },
-    {
-      id: 2,
-      image: "https://i.ibb.co/wJKZRf6/Screenshot-2023-08-28-124531.png",
-    },
-  ];
-
   return (
-    <div className="">
-      <Swiper
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper"
-        autoplay={{ delay: 3000 }}
-      >
-        {sliderDatas.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <div className="w-full h-[800px] relative">
-              <Image
-                src={slide.image}
-                alt="Image"
-                layout="fill"
-                objectFit="cover"
-              />
+    <Swiper
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+        delay: 3500,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Autoplay, Pagination, Navigation]}
+    >
+      {sliders.map((slide) => (
+        <SwiperSlide key={slide.id}>
+          <div className="w-full h-[650px] relative">
+            <Image
+              src={slide.image}
+              alt="Image"
+              height={1200}
+              width={1200}
+              className="object-cover h-full w-full"
+            />
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40" />
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+              <h2 className="text-3xl font-semibold">{slide.title}</h2>
+              <p className="text-lg mt-2">{slide.subtitle}</p>
+              <button className="bg-blue-500 text-white py-2 px-4 mt-4 rounded-md hover:bg-blue-600">
+                {slide.buttonLabel}
+              </button>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 
