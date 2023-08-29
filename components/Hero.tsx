@@ -1,6 +1,5 @@
 import AboutSection from "./About";
-import CallToActionSection from "./CallToAction";
-import ContactSection from "./Contact";
+import CallToAction from "./CallToAction";
 import HeroSlider from "./HeroSlider";
 import Services from "./Services";
 import TestimonialsSection from "./Testimonials";
@@ -15,8 +14,9 @@ const Hero = () => {
         <AboutSection />
         <TravelTips />
         <TestimonialsSection />
-        <CallToActionSection />
-        <ContactSection />
+        <div className="py-20">
+          <CallToAction />
+        </div>
       </div>
     </div>
   );
