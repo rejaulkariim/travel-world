@@ -8,7 +8,7 @@ import TravelTips from "./TravelTips";
 
 const Hero = () => {
   return (
-    <div className="mt-16">
+    <div className="md:mt-16">
       <HeroSlider />
       <div className="wrapper">
         <Services />
