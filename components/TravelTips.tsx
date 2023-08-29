@@ -1,40 +1,62 @@
-const TravelTipsSection = () => {
+"use client";
+import { guides } from "@/constants";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+// import required modules
+import { FreeMode } from "swiper/modules";
+
+const TravelTips = () => {
   return (
-    <div className="py-16">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-semibold mb-4">Travel Tips and Guides</h2>
-        <p className="text-gray-600 mb-8">
-          Discover valuable insights to make the most of your travel experience.
+    <section className="py-16">
+      <div className="max-w-2xl mx-auto text-center space-y-2 pb-10">
+        <h2 className="text-2xl font-semibold ">Travel Tips & Guide</h2>
+        <p className="text-sm">
+          Professional and knowledgeable guides to make your journey educational
+          and enjoyable.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Travel Tip Card */}
-          <div className="bg-card rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Packing Essentials</h3>
-            <p className="text-gray-600">
-              Learn what to pack for different types of destinations and
-              seasons.
-            </p>
-          </div>
-          {/* Travel Tip Card */}
-          <div className="bg-card rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Local Cuisine</h3>
-            <p className="text-gray-600">
-              Immerse yourself in the local culture through its delicious
-              cuisine.
-            </p>
-          </div>
-          {/* Travel Tip Card */}
-          <div className="bg-card rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Exploring Landmarks</h3>
-            <p className="text-gray-600">
-              Discover hidden gems and iconic landmarks in your chosen
-              destination.
-            </p>
-          </div>
-        </div>
       </div>
-    </div>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        freeMode={true}
+        modules={[FreeMode]}
+        className="pt-10"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-20">
+          {guides.map((guide, index) => (
+            <SwiperSlide
+              key={index}
+              className=" bg-muted rounded-xl shadow-md p-2 h-[330px] cursor-pointer"
+            >
+              <div className="h-52">
+                <Image
+                  src={guide.image}
+                  height={300}
+                  width={300}
+                  alt={guide.title}
+                  className="object-cover rounded-xl h-full w-full"
+                />
+              </div>
+
+              <div className="space-y-1 text-center mt-2">
+                <h3 className="text-base uppercase tracking-wide font-semibold">
+                  {guide.title}
+                </h3>
+                <p className="text-foreground text-sm text-center">
+                  {guide.description}
+                </p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </div>
+      </Swiper>
+    </section>
   );
 };
 
-export default TravelTipsSection;
+export default TravelTips;
