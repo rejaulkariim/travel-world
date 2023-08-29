@@ -2,22 +2,22 @@ import AboutSection from "./About";
 import CallToActionSection from "./CallToAction";
 import ContactSection from "./Contact";
 import HeroSlider from "./HeroSlider";
-import ServicesSection from "./Services";
+import Services from "./Services";
 import TestimonialsSection from "./Testimonials";
 import TravelTipsSection from "./TravelTips";
 
-
 const Hero = () => {
-
   return (
-    <div className="mt-20 wrapper">
+    <div className="mt-16">
       <HeroSlider />
-      <ServicesSection />
-      <AboutSection />
-      <TravelTipsSection />
-      <TestimonialsSection />
-      <CallToActionSection />
-      <ContactSection />
+      <div className="wrapper">
+        <Services />
+        <AboutSection />
+        <TravelTipsSection />
+        <TestimonialsSection />
+        <CallToActionSection />
+        <ContactSection />
+      </div>
     </div>
   );
 };
