@@ -4,7 +4,7 @@ import { ModeToggle } from "./ModeToggle";
 
 const Navbar = () => {
   return (
-    <header className="flex fixed top-0 left-0 right-0 justify-between items-center h-16 px-10 bg-accent z-40">
+    <header className="flex fixed top-0 left-0 right-0 justify-between items-center h-16 px-10 bg-accent z-40 backdrop-blur">
       <div>
         <Link href="/">
           <h1 className="text-xl font-bold tracking-wider">Miah World</h1>

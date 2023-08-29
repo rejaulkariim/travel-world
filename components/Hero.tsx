@@ -4,7 +4,7 @@ import ContactSection from "./Contact";
 import HeroSlider from "./HeroSlider";
 import Services from "./Services";
 import TestimonialsSection from "./Testimonials";
-import TravelTipsSection from "./TravelTips";
+import TravelTips from "./TravelTips";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="wrapper">
         <Services />
         <AboutSection />
-        <TravelTipsSection />
+        <TravelTips />
         <TestimonialsSection />
         <CallToActionSection />
         <ContactSection />

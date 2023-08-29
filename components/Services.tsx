@@ -1,6 +1,6 @@
 "use client";
-import { services } from "@/constants";
 
+import { services } from "@/constants";
 import Image from "next/image";
 
 const Services = () => {
@@ -17,7 +17,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center rounded-xl shadow-md p-2 h-[330px]"
+            className=" bg-muted rounded-xl shadow-md p-2 h-[330px]"
           >
             <div className="h-52">
               <Image
