@@ -1,4 +1,6 @@
-const CallToActionSection = () => {
+import Link from "next/link";
+
+const CallToAction = () => {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-indigo-500 py-12 rounded-lg">
       <div className="container mx-auto text-center">
@@ -9,12 +11,15 @@ const CallToActionSection = () => {
           Plan your dream vacation with us today and create unforgettable
           memories.
         </p>
-        <button className="bg-white text-indigo-500 py-2 px-6 rounded-full text-lg font-semibold shadow-lg hover:bg-indigo-500 hover:text-white">
+        <Link
+          href="/contact"
+          className="bg-white text-indigo-500 py-2 px-6 rounded-full text-lg font-semibold shadow-lg"
+        >
           Start Your Journey
-        </button>
+        </Link>
       </div>
     </div>
   );
 };
 
-export default CallToActionSection;
+export default CallToAction;
