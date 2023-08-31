@@ -1,6 +1,8 @@
 "use client";
- import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser"
 import { useRef } from "react";
+
+import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   const form = useRef();
@@ -17,7 +19,7 @@ const ContactSection = () => {
       });
   };
   return (
-    <section className=" py-16 text-foreground">
+    <section className="mt-16 py-16 text-foreground">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-4 text-center">Contact Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -94,6 +96,7 @@ const ContactSection = () => {
                 Send Message
               </button>
             </form>
+            <ContactForm />
           </div>
         </div>
       </div>

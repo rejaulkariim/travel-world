@@ -3,7 +3,7 @@ const TestimonialsSection = () => {
     {
       name: "Emily Johnson",
       testimonial:
-        "Thanks to your agency, I had the most amazing trip of my life. The personalized recommendations and attention to detail made all the difference.",
+        "Thanks to your agency, I had the most amazing trip of my life. ",
     },
     {
       name: "Alex Carter",
@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 shadow-md text-gray-700"
+              className="bg-muted rounded-lg p-6 shadow-md text-foreground"
             >
               <p className="mb-4">{testimonial.testimonial}</p>
               <p className="font-semibold">{testimonial.name}</p>
