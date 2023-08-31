@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
@@ -16,6 +17,7 @@
     "autoprefixer": "10.4.15",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "emailjs": "^4.0.2",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.13",
     "icons": "^1.0.0",
