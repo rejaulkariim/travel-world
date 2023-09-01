@@ -1,22 +1,32 @@
 "use client";
-import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
 import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_bjokw1a', 'template_fatema', form.current, 'wsGx46LaoIgI5AnHf')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_bjokw1a",
+        "template_fatema",
+        form.current,
+        "wsGx46LaoIgI5AnHf"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-          alert('Your message has been successfully !!!')
+          alert("Your message has been successfully !!!");
           form.current.reset();
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
   return (
     <section className="mt-16 py-16 text-foreground">
@@ -42,8 +52,7 @@ const ContactSection = () => {
             </ul>
           </div>
           <div>
-            <form  ref={form}
-          onSubmit={sendEmail} className="max-w-sm mx-auto">
+            <form ref={form} onSubmit={sendEmail} className="max-w-sm mx-auto">
               <div className="mb-4">
                 <label
                   htmlFor="name"

@@ -31,37 +31,38 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-muted z-40 flex items-center p-2">
-        <div className="flex justify-between gap-4 items-center w-full">
-          <div className="flex flex-col items-center space-y-2">
+        <div className="flex justify-between gap-4 items-center h-full">
+          <Link href="/" className="flex flex-col items-center space-y-2 p-2">
             <BiHomeHeart className="text-lg text-foreground" />
-            <Link href="/" className="text-xs text-foreground">
-              Home
-            </Link>
-          </div>
-          <div className="flex flex-col items-center space-y-2">
+            <p className="text-xs text-foreground">Home</p>
+          </Link>
+
+          <Link
+            href="#services"
+            className="flex flex-col items-center space-y-2 p-2"
+          >
             <HiOutlineUserGroup className="text-lg text-foreground" />
-            <Link href="#services" className="text-xs text-foreground">
-              Services
-            </Link>
-          </div>
-          <div className="flex flex-col items-center space-y-2">
+            <p className="text-xs text-foreground">Services</p>
+          </Link>
+
+          <Link href="/" className="flex flex-col items-center space-y-2 p-2">
             <GiAirplaneDeparture className="text-lg text-foreground" />
-            <Link href="/" className="text-xs text-foreground">
-              Air Ticket
-            </Link>
-          </div>
-          <div className="flex flex-col items-center space-y-2">
+            <p className="text-xs text-foreground">Air Ticket</p>
+          </Link>
+
+          <Link href="/" className="flex flex-col items-center space-y-2 p-2">
             <FaHospitalUser className="text-lg text-foreground" />
-            <Link href="/" className="text-xs text-foreground">
-              About
-            </Link>
-          </div>
-          <div className="flex flex-col items-center space-y-2">
+            <p className="text-xs text-foreground">About</p>
+          </Link>
+          <Link
+            href="/contact"
+            className="flex flex-col items-center space-y-2 p-2"
+          >
             <LuContact className="text-lg text-foreground" />
-            <Link href="/contact" className="text-xs text-foreground">
+            <p href="/contact" className="text-xs text-foreground">
               Contact
-            </Link>
-          </div>
+            </p>
+          </Link>
         </div>
       </div>
     </header>
