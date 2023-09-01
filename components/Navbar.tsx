@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-muted z-40 flex items-center p-2">
-        <div className="flex justify-between gap-4 items-center h-full">
+        <div className="flex justify-between gap-4 items-center h-full w-full">
           <Link href="/" className="flex flex-col items-center space-y-2 p-2">
             <BiHomeHeart className="text-lg text-foreground" />
             <p className="text-xs text-foreground">Home</p>

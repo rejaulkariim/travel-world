@@ -2,7 +2,7 @@ import AboutSection from "./About";
 import CallToAction from "./CallToAction";
 import HeroSlider from "./HeroSlider";
 import Services from "./Services";
-import TestimonialsSection from "./Testimonials";
+import Testimonials from "./Testimonials";
 import TravelTips from "./TravelTips";
 
 const Hero = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
         <Services />
         <AboutSection />
         <TravelTips />
-        <TestimonialsSection />
+        <Testimonials />
         <div className="py-20">
           <CallToAction />
         </div>
