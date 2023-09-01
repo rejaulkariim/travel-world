@@ -1,3 +1,4 @@
+"use client";
 import { ModeToggle } from "@/components/ModeToggle";
 import Sidebar from "@/components/Sidebar";
 
