@@ -4,10 +4,6 @@ const ContactForm = () => {
   return (
     <div className="px-2 md:px-4">
       <h2 className="text-xl font-bold">Contact us</h2>
-      <p className="text-xs md:text-sm text-foreground">
-        We appreciate your visit to our website. Your feedback and inquiries are
-        important to us. Please use the information below to get in touch.
-      </p>
       <form className="mt-4">
         <div className="mb-4">
           <label

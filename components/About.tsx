@@ -6,9 +6,6 @@ const AboutSection = () => {
   return (
     <section className="py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-semibold mb-4 text-center">
-          About Our Travel Agency
-        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="mb-4">
             <Image
@@ -20,7 +17,10 @@ const AboutSection = () => {
             />
           </div>
           <div>
-            <p className="text-foreground leading-7">
+            <h2 className="text-2xl text-muted-foreground font-bold mb-4">
+              About Our Travel Agency
+            </h2>
+            <p className="text-sm md:text-base text-muted-foreground">
               Welcome to [Your Travel Agency Name]! We are dedicated to making
               your travel experiences unforgettable. With a team of passionate
               travelers and experts, we curate the best destinations and
@@ -31,6 +31,7 @@ const AboutSection = () => {
               for you. Our commitment to quality, personalized service, and
               attention to detail sets us apart from the rest.
             </p>
+            <button>Learn More</button>
           </div>
         </div>
       </div>

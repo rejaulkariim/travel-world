@@ -1,4 +1,5 @@
 import AboutSection from "./About";
+import AirTicketPromo from "./AirTicketPromo";
 import CallToAction from "./CallToAction";
 import HeroSlider from "./HeroSlider";
 import Services from "./Services";
@@ -11,6 +12,7 @@ const Hero = () => {
       <HeroSlider />
       <div className="wrapper">
         <Services />
+        <AirTicketPromo />
         <AboutSection />
         <TravelTips />
         <Testimonials />
