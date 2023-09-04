@@ -1,3 +1,5 @@
+"use client";
+
 import ContactSection from "@/components/Contact";
 
 const ContactPage = () => {

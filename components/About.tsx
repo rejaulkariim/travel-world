@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 const About = () => {
   return (
@@ -31,7 +32,9 @@ const About = () => {
               for you. Our commitment to quality, personalized service, and
               attention to detail sets us apart from the rest.
             </p>
-            <button>Learn More</button>
+            <div className="mt-4">
+              <Button>Learn More</Button>
+            </div>
           </div>
         </div>
       </div>

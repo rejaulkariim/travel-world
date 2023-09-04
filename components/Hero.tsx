@@ -1,3 +1,5 @@
+"use client";
+
 import About from "./About";
 import AirTicketPromo from "./AirTicketPromo";
 import CallToAction from "./CallToAction";

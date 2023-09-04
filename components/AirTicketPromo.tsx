@@ -68,6 +68,7 @@ const AirTicketPromo = () => {
                   layout="fill"
                   objectFit="cover"
                   alt="image"
+                  priority
                   className="promo-image"
                 />
               </div>
