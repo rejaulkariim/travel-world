@@ -16,7 +16,7 @@ import Image from "next/image";
 
 const AirTicketPromo = () => {
   return (
-    <section className="py-12">
+    <section id="airTicket" className="py-12">
       <div className="max-w-xl mx-auto text-center space-y-2 pb-10">
         <h2 className="text-2xl font-bold text-muted-foreground ">
           Air Ticket

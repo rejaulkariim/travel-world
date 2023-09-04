@@ -53,6 +53,9 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Mia Travel World. All rights
           reserved.
         </p>
+        <p className="text-sm text-center text-rose-500 hover:text-blue-700 mt-2">
+          <Link href="/">Build with ❤️ by Frontend Team</Link>
+        </p>
       </div>
     </footer>
   );

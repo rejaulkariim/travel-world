@@ -19,7 +19,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-card rounded-xl shadow-md p-3 min-h-[330px]"
+            className="bg-card rounded-xl shadow-md p-4 h-fit md:min-h-[330px]"
           >
             <div className="h-40">
               <Image
