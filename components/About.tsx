@@ -2,13 +2,10 @@
 
 import Image from "next/image";
 
-const AboutSection = () => {
+const About = () => {
   return (
-    <section className="py-16">
+    <section id="about" className="py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-semibold mb-4 text-center">
-          About Our Travel Agency
-        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="mb-4">
             <Image
@@ -20,27 +17,21 @@ const AboutSection = () => {
             />
           </div>
           <div>
-            <p className="text-foreground leading-relaxed">
+            <h2 className="text-2xl text-muted-foreground font-bold mb-4">
+              About Our Travel Agency
+            </h2>
+            <p className="text-sm md:text-base text-muted-foreground">
               Welcome to [Your Travel Agency Name]! We are dedicated to making
-              your travel experiences unforgettable.
+              your travel experiences unforgettable. With a team of passionate
+              travelers and experts, we curate the best destinations and
+              experiences around the world, ensuring every trip you take with us
+              is filled with adventure, discovery, and joy. Whether you&apos;re
+              looking for a relaxing beach getaway, an adventurous mountain
+              trek, or a cultural city exploration, we have the perfect package
+              for you. Our commitment to quality, personalized service, and
+              attention to detail sets us apart from the rest.
             </p>
-            <p className="mt-4 text-foreground leading-relaxed">
-              With a team of passionate travelers and experts, we curate the
-              best destinations and experiences around the world, ensuring every
-              trip you take with us is filled with adventure, discovery, and
-              joy.
-            </p>
-            <p className="mt-4 text-foreground leading-relaxed">
-              Whether you're looking for a relaxing beach getaway, an
-              adventurous mountain trek, or a cultural city exploration, we have
-              the perfect package for you. Our commitment to quality,
-              personalized service, and attention to detail sets us apart from
-              the rest.
-            </p>
-            <p className="mt-4 text-foreground leading-relaxed">
-              Join us in creating memories that last a lifetime. Let's embark on
-              a journey together!
-            </p>
+            <button>Learn More</button>
           </div>
         </div>
       </div>
@@ -48,4 +39,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default About;

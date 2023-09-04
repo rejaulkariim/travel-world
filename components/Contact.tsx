@@ -2,8 +2,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
-import ContactForm from "./ContactForm";
-
 const ContactSection = () => {
   const form = useRef();
 
@@ -105,7 +103,6 @@ const ContactSection = () => {
                 Send Message
               </button>
             </form>
-            <ContactForm />
           </div>
         </div>
       </div>

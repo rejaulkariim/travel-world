@@ -24,7 +24,7 @@ const HeroSlider = () => {
     >
       {sliders.map((slide) => (
         <SwiperSlide key={slide.id}>
-          <div className="w-full h-[650px] relative">
+          <div className="w-full h-[85vh] relative">
             <Image
               src={slide.image}
               alt="Image"
@@ -32,7 +32,7 @@ const HeroSlider = () => {
               width={1200}
               className="object-cover h-full w-full"
             />
-            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40" />
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60" />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
               <h2 className="text-3xl font-semibold">{slide.title}</h2>
               <p className="text-lg mt-2">{slide.subtitle}</p>

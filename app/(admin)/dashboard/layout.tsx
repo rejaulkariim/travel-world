@@ -1,7 +1,7 @@
+"use client";
 import { ModeToggle } from "@/components/ModeToggle";
 import Sidebar from "@/components/Sidebar";
-
-import { BiSolidUserCircle } from "react-icons/bi";
+import { UserButton } from "@clerk/nextjs";
 
 export default function RootLayout({
   children,
@@ -30,14 +30,7 @@ export default function RootLayout({
           </div>
           <div className="flex items-center gap-4">
             <ModeToggle />
-            {/* <UserAccountNav
-          user={{
-            name: user.name,
-            image: user.image,
-            email: user.email,
-          }}
-        /> */}
-            <BiSolidUserCircle size={30} />
+            <UserButton afterSignOutUrl="/" />
           </div>
         </header>
 

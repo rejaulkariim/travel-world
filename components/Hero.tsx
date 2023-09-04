@@ -1,9 +1,11 @@
-import AboutSection from "./About";
+import About from "./About";
+import AirTicketPromo from "./AirTicketPromo";
 import CallToAction from "./CallToAction";
 import HeroSlider from "./HeroSlider";
 import Services from "./Services";
-import TestimonialsSection from "./Testimonials";
+import Testimonials from "./Testimonials";
 import TravelTips from "./TravelTips";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 const Hero = () => {
   return (
@@ -11,13 +13,15 @@ const Hero = () => {
       <HeroSlider />
       <div className="wrapper">
         <Services />
-        <AboutSection />
+        <AirTicketPromo />
+        <About />
         <TravelTips />
-        <TestimonialsSection />
+        <Testimonials />
         <div className="py-20">
           <CallToAction />
         </div>
       </div>
+      <WhatsAppIcon />
     </div>
   );
 };

@@ -4,10 +4,10 @@ const CallToAction = () => {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-indigo-500 py-12 rounded-lg">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-semibold text-white mb-4">
+        <h2 className="text-2xl font-bold text-white mb-4">
           Ready to Embark on Your Next Adventure?
         </h2>
-        <p className="text-white text-lg mb-6">
+        <p className="text-white text-sm md:text-base mb-6">
           Plan your dream vacation with us today and create unforgettable
           memories.
         </p>
