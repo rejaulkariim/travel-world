@@ -16,7 +16,7 @@ const Team = () => {
         {teams.map((team, index) => (
           <div
             key={index}
-            className="bg-card shadow-lg rounded-lg overflow-hidden h-72 w-60 p-2"
+            className="bg-card shadow-lg rounded-lg overflow-hidden h-72 w-96 p-2"
           >
             <div className="p-4 h-44 w-44 mx-auto">
               <Image
@@ -29,9 +29,9 @@ const Team = () => {
               />
             </div>
             <div className="text-center">
-              <h1 className="text-2xl font-semibold text-muted-foreground">
+              <h2 className="text-base font-semibold uppercase text-muted-foreground">
                 {team.name}
-              </h1>
+              </h2>
               <p className="text-muted-foreground">{team.position}</p>
             </div>
           </div>

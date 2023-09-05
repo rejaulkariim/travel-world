@@ -41,7 +41,7 @@ const Footer = () => {
                 <BsFacebook size={30} className="text-muted-foreground" />
               </Link>
               <Link
-                href="https://www.facebook.com/miahworld1102"
+                href="https://www.instagram.com/miaworldtravel/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
                 target="_blank"
               >
                 <BsInstagram size={30} className="text-muted-foreground" />

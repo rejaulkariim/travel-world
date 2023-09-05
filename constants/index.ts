@@ -146,23 +146,30 @@ export const destinations = [
 export const teams = [
   {
     id: 1,
-    name: "Hassan",
+    name: "MUHAMMAD NUR SYAHID BIN MOHD SAFIE",
     position: "Director",
+    image:
+      "https://res.cloudinary.com/swiftpos/image/upload/v1693909236/Miah_Travel/n8ly6dk3gixjn10w5j8h.jpg",
+  },
+  {
+    id: 2,
+    name: "MD MUKIT MIAH",
+    position: "Managing Director",
     image:
       "https://res.cloudinary.com/swiftpos/image/upload/v1693902411/Miah_Travel/uggjhfmi8stmiwpsym1y.jpg",
   },
   {
-    id: 2,
-    name: "Hassan",
-    position: "Director",
+    id: 3,
+    name: "MUHAMMAD NUR SYAHID",
+    position: "Business Development Advisor",
     image:
       "https://res.cloudinary.com/swiftpos/image/upload/v1693907709/Miah_Travel/msnwpkmoiwpdcwt8vbef.jpg",
   },
   {
     id: 3,
-    name: "Hassan",
-    position: "Director",
+    name: "Rejaul Karim",
+    position: "Web Developer",
     image:
-      "https://res.cloudinary.com/swiftpos/image/upload/v1693907709/Miah_Travel/msnwpkmoiwpdcwt8vbef.jpg",
+      "https://res.cloudinary.com/swiftpos/image/upload/v1692862212/swiftPos/qz28aoumfalrbyqqm6jx.png",
   },
 ];
