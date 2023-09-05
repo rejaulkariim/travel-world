@@ -5,7 +5,7 @@ import { useRef } from "react";
 const ContactForm = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.MouseEvent) => {
     e.preventDefault();
 
     emailjs
