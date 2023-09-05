@@ -17,20 +17,24 @@ export function ModeToggle() {
   };
 
   return (
-    <div className="h-8 w-8 px-0" onClick={handleThemeChange}>
+    <Button
+      variant="outline"
+      className="h-8 w-8 px-0"
+      onClick={handleThemeChange}
+    >
       {theme === "light" ? (
         <>
-          <Button variant="outline" size="icon">
+          <button>
             <BsFillMoonFill size={20} className="rotate-0 scale-100" />
-          </Button>
+          </button>
         </>
       ) : (
         <>
-          <Button variant="outline" size="icon">
+          <button>
             <BiSun size={20} />
-          </Button>
+          </button>
         </>
       )}
-    </div>
+    </Button>
   );
 }

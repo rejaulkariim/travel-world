@@ -14,12 +14,10 @@ const TravelTips = () => {
     <section className="py-16">
       <div className="max-w-xl mx-auto text-center space-y-2 pb-10">
         <h2 className="text-2xl font-bold text-muted-foreground ">
-          Travel Tips & Guide
+          Malaysia Travel Guide
         </h2>
         <p className="text-sm md:text-base text-muted-foreground">
-          Professional and knowledgeable guides to make your journey educational
-          and enjoyable. Professional and knowledgeable guides to make your
-          journey educational and enjoyable.
+          Explore the Beauty of Malaysia
         </p>
       </div>
       <Swiper
@@ -45,7 +43,7 @@ const TravelTips = () => {
           {guides.map((guide, index) => (
             <SwiperSlide
               key={index}
-              className="bg-card rounded-xl shadow-lg p-4 min-h-[310px] cursor-pointer"
+              className="bg-card rounded-xl shadow-lg p-4 min-h-[300px] cursor-pointer"
             >
               <div className="h-40">
                 <Image

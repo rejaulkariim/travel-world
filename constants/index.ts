@@ -31,46 +31,34 @@ export const services = [
 
 export const guides = [
   {
-    title: "Customized Travel Packages",
-    description:
-      " Learn what to pack for different types of destinations and seasons.",
+    title: "Beautiful Beaches",
+    description: " Relax on the Sandy Shores.",
     image:
-      "https://images.pexels.com/photos/1058959/pexels-photo-1058959.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/3608071/pexels-photo-3608071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    title: "Expert Guides",
-    description:
-      "Professional and knowledgeable guides to make your journey educational and enjoyable.",
+    title: " Cultural Heritage",
+    description: " Explore Malaysia's Rich History.",
     image:
-      "https://images.pexels.com/photos/1851481/pexels-photo-1851481.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/4125771/pexels-photo-4125771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    title: "Luxurious Accommodations",
-    description:
-      "Handpicked accommodations that provide comfort and relaxation during your stay.",
+    title: " Delicious Cuisine",
+    description: "  Savor Malaysian Flavors.",
     image:
-      "https://images.pexels.com/photos/354103/pexels-photo-354103.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    title: "Adventurous Excursions",
-    description:
-      "Exciting and memorable activities that let you explore the destination up close.",
+    title: "Adventure Awaits",
+    description: " Thrilling Outdoor Activities",
     image:
-      "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/18122069/pexels-photo-18122069/free-photo-of-building-festival-architecture-travel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    title: "Luxurious Accommodations",
-    description:
-      "Handpicked accommodations that provide comfort and relaxation during your stay.",
+    title: "  Urban Adventures",
+    description: "  Discover the Vibrant Cities",
     image:
-      "https://images.pexels.com/photos/354103/pexels-photo-354103.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  },
-  {
-    title: "Adventurous Excursions",
-    description:
-      "Exciting and memorable activities that let you explore the destination up close.",
-    image:
-      "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/18122071/pexels-photo-18122071/free-photo-of-city-road-water-skyline.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
 
@@ -116,6 +104,7 @@ export const sliders = [
     link: "/contact",
   },
 ];
+
 export const destinations = [
   {
     id: 1,
@@ -151,5 +140,29 @@ export const destinations = [
       "https://images.pexels.com/photos/3226403/pexels-photo-3226403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Explore Cambodia's Wonders",
     subtitle: "Unveil the Rich Heritage and Serene Beauty of Cambodia",
+  },
+];
+
+export const teams = [
+  {
+    id: 1,
+    name: "Hassan",
+    position: "Director",
+    image:
+      "https://res.cloudinary.com/swiftpos/image/upload/v1693902411/Miah_Travel/uggjhfmi8stmiwpsym1y.jpg",
+  },
+  {
+    id: 2,
+    name: "Hassan",
+    position: "Director",
+    image:
+      "https://res.cloudinary.com/swiftpos/image/upload/v1693907709/Miah_Travel/msnwpkmoiwpdcwt8vbef.jpg",
+  },
+  {
+    id: 3,
+    name: "Hassan",
+    position: "Director",
+    image:
+      "https://res.cloudinary.com/swiftpos/image/upload/v1693907709/Miah_Travel/msnwpkmoiwpdcwt8vbef.jpg",
   },
 ];

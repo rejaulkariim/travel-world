@@ -11,7 +11,7 @@ import { ModeToggle } from "./ModeToggle";
 const Navbar = () => {
   return (
     <header>
-      <nav className="flex md:fixed top-0 left-0 right-0 justify-between items-center h-16 px-2 md:px-10 bg-card z-40 backdrop-blur">
+      <nav className="flex md:fixed top-0 left-0 right-0 justify-between items-center h-16 px-4 md:px-10 bg-card z-40 backdrop-blur">
         <div>
           <Link href="/">
             <h1 className="text-xl uppercase font-bold tracking-widest">
@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link href="/">Home</Link>
           <Link href="#services">Services</Link>
           <Link href="#destination">Destination</Link>
-          <Link href="/">About</Link>
+          <Link href="#about">About</Link>
           <Link href="/contact">Contact</Link>
         </div>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
             className="flex flex-col items-center space-y-2 p-2"
           >
             <GiAirplaneDeparture className="text-lg text-muted-foreground" />
-            <p className="text-xs text-muted-foreground">Air Ticket</p>
+            <p className="text-xs text-muted-foreground">Destination</p>
           </Link>
 
           <Link

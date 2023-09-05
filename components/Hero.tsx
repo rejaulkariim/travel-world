@@ -5,6 +5,7 @@ import CallToAction from "./CallToAction";
 import Destinations from "./Destinations";
 import HeroSlider from "./HeroSlider";
 import Services from "./Services";
+import Team from "./Team";
 import Testimonials from "./Testimonials";
 import TravelTips from "./TravelTips";
 import WhatsAppIcon from "./WhatsAppIcon";
@@ -17,6 +18,7 @@ const Hero = () => {
         <Services />
         <Destinations />
         <About />
+        <Team />
         <TravelTips />
         <Testimonials />
         <CallToAction />

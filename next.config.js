@@ -4,7 +4,8 @@ const nextConfig = {
         domains: [
           "images.pexels.com",
           "img.freepik.com",
-          "i.ibb.co"
+          "i.ibb.co",
+          "res.cloudinary.com"
         ],
       },
 }

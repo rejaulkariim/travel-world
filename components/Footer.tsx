@@ -13,9 +13,10 @@ const Footer = () => {
               About Us
             </h3>
             <p className="text-sm md:text-base text-muted-foreground leading-5">
-              We are a team of avid travelers who are passionate about curating
-              unforgettable experiences for our clients. Explore the world with
-              us and create memories that last a lifetime.
+              Crafting Extraordinary Journeys Worldwide. Beaches, Mountains,
+              Cities – We&apos;ve Got You Covered. Our Secret Ingredient?
+              Quality, Personalized Service, Attention to Detail. Let&apos;s
+              Make Memories Together!
             </p>
           </div>
           <div>
@@ -23,9 +24,9 @@ const Footer = () => {
               Contact Us
             </h3>
             <p className="text-sm md:text-base text-muted-foreground">
-              Phone: +60 3-7865 4166
+              Phone: +60166256738
               <br />
-              Email: miahworld53@gmail.com
+              Email: miahtravels8@gmail.com
             </p>
           </div>
           <div className="md:text-center">

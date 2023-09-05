@@ -18,7 +18,7 @@ const Destinations = () => {
   return (
     <section id="destination" className="section-padding">
       <div className="max-w-xl mx-auto text-center space-y-2 pb-10">
-        <h2 className="text-2xl font-bold text-muted-foreground ">
+        <h2 className="text-2xl md:text-4xl font-bold text-muted-foreground ">
           Popular Destinations
         </h2>
         <p className="text-sm md:text-base text-muted-foreground">
