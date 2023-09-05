@@ -7,12 +7,11 @@ const Services = () => {
   return (
     <section id="services" className="section-padding">
       <div className="max-w-xl mx-auto text-center space-y-2">
-        <h2 className="text-2xl font-bold text-muted-foreground">
-          Our Services
+        <h2 className="text-2xl md:text-4xl font-bold text-muted-foreground">
+          Our Travel Services
         </h2>
         <p className="text-sm md:text-base text-muted-foreground">
-          Professional and knowledgeable guides to make your journey educational
-          and enjoyable.
+          Your Gateway to Memorable Journeys
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
