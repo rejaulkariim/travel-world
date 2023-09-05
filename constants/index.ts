@@ -1,31 +1,31 @@
 export const services = [
   {
-    title: "Customized Travel Packages",
+    title: "Flight Tickets",
     description:
-      "Tailored travel experiences that match your preferences and interests.",
+      "Affordable and convenient bookings for domestic and international flights.",
     image:
-      "https://images.pexels.com/photos/1058959/pexels-photo-1058959.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/11937613/pexels-photo-11937613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    title: "Expert Guides",
+    title: "Hotels",
     description:
-      "Professional and knowledgeable guides to make your journey educational and enjoyable.",
+      "Comfortable accommodations tailored to your preferences and budget.",
     image:
-      "https://images.pexels.com/photos/1851481/pexels-photo-1851481.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/18080725/pexels-photo-18080725/free-photo-of-skyscrapers-on-the-coast-in-hallandale-beach-florida-usa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    title: "Luxurious Accommodations",
+    title: "Tour",
     description:
-      "Handpicked accommodations that provide comfort and relaxation during your stay.",
+      "Memorable guided tours to immerse you in local culture and attractions.",
     image:
-      "https://images.pexels.com/photos/354103/pexels-photo-354103.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    title: "Adventurous Excursions",
+    title: "Transportation",
     description:
-      "Exciting and memorable activities that let you explore the destination up close.",
+      "Hassle-free travel with car rentals, airport transfers, and chauffeur services.",
     image:
-      "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/18038881/pexels-photo-18038881/free-photo-of-sports-shelby-mustang-on-parking-lot.jpeg",
   },
 ];
 
@@ -78,131 +78,78 @@ export const sliders = [
   {
     id: 1,
     image:
-      "https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
+      "https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Explore. Wander. Experience.",
+    subtitle: "Unforgettable Adventures Await",
+    link: "/contact",
   },
   {
-    id: 1,
+    id: 2,
     image:
-      "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
+      "https://images.pexels.com/photos/1842332/pexels-photo-1842332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Let Your Journey Begin with Us",
+    subtitle: "Discover the World's Wonders",
+    link: "/contact",
   },
   {
-    id: 1,
+    id: 3,
     image:
-      "https://images.pexels.com/photos/2577274/pexels-photo-2577274.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
+      "https://images.pexels.com/photos/2132051/pexels-photo-2132051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Embrace the Extraordinary",
+    subtitle: "Where Dreams and Destinations Converge",
+    link: "/contact",
   },
   {
-    id: 1,
+    id: 4,
     image:
-      "https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
+      "https://images.pexels.com/photos/4128285/pexels-photo-4128285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Escape to Paradise",
+    subtitle: "Your Dream Vacation Awaits",
+    link: "/contact",
   },
   {
-    id: 1,
+    id: 5,
     image:
-      "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
-  },
-  {
-    id: 1,
-    image:
-      "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
-  },
-  {
-    id: 1,
-    image:
-      "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
-  },
-  {
-    id: 1,
-    image:
-      "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
-  },
-  {
-    id: 1,
-    image:
-      "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
-  },
-  {
-    id: 1,
-    image:
-      "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
-  },
-  {
-    id: 1,
-    image:
-      "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
+      "https://images.pexels.com/photos/18198497/pexels-photo-18198497/free-photo-of-phi-phi-island.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Travel Beyond Boundaries",
+    subtitle: "Discover the Extraordinary",
+    link: "/contact",
   },
 ];
-export const airTicketsPromo = [
+export const destinations = [
   {
     id: 1,
     image:
-      "https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
+      "https://images.pexels.com/photos/4467503/pexels-photo-4467503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Discover Malaysia",
+    subtitle: "Where Cultural Diversity Meets Natural Beauty",
+  },
+  {
+    id: 2,
+    image:
+      "https://images.pexels.com/photos/1842332/pexels-photo-1842332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Explore Singapore",
+    subtitle: "A Modern Oasis with a Rich Heritage",
+  },
+  {
+    id: 3,
+    image:
+      "https://images.pexels.com/photos/1518723/pexels-photo-1518723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Experience Indonesia",
+    subtitle: "Island Adventures and Cultural Treasures Await",
   },
   {
     id: 1,
     image:
-      "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
+      "https://images.pexels.com/photos/130159/pexels-photo-130159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Journey Through Thailand",
+    subtitle: "Savor the Flavors of Thailand's Culture and Nature",
   },
   {
     id: 1,
     image:
-      "https://images.pexels.com/photos/2577274/pexels-photo-2577274.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
-  },
-  {
-    id: 1,
-    image:
-      "https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
-  },
-  {
-    id: 1,
-    image:
-      "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Slide 1 Title",
-    subtitle: "Slide 1 Subtitle",
-    buttonLabel: "Learn More",
+      "https://images.pexels.com/photos/3226403/pexels-photo-3226403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Explore Cambodia's Wonders",
+    subtitle: "Unveil the Rich Heritage and Serene Beauty of Cambodia",
   },
 ];

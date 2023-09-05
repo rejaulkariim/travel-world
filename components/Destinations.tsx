@@ -11,20 +11,18 @@ import {
 } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { airTicketsPromo } from "@/constants";
+import { destinations } from "@/constants";
 import Image from "next/image";
 
-const AirTicketPromo = () => {
+const Destinations = () => {
   return (
-    <section id="airTicket" className="py-12">
+    <section id="destination" className="section-padding">
       <div className="max-w-xl mx-auto text-center space-y-2 pb-10">
         <h2 className="text-2xl font-bold text-muted-foreground ">
-          Air Ticket
+          Popular Destinations
         </h2>
         <p className="text-sm md:text-base text-muted-foreground">
-          Professional and knowledgeable guides to make your journey educational
-          and enjoyable. Professional and knowledgeable guides to make your
-          journey educational and enjoyable.
+          Explore the Must-Visit Places
         </p>
       </div>
       <Swiper
@@ -54,37 +52,31 @@ const AirTicketPromo = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         modules={[EffectCoverflow, Pagination, Autoplay, FreeMode]}
       >
-        {airTicketsPromo.map((promo) => (
-          <SwiperSlide key={promo.id}>
+        {destinations.map((destination) => (
+          <SwiperSlide key={destination.id}>
             <div className="bg-card rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-60">
                 <Image
-                  src={promo.image}
+                  src={destination.image}
                   layout="fill"
                   objectFit="cover"
                   alt="image"
                   priority
-                  className="promo-image"
+                  className="destination-image"
                 />
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-bold text-muted-foreground mb-2">
-                  {promo.title}
+                  {destination.title}
                 </h3>
                 <p className="text-sm md:text-base text-muted-foreground">
-                  {promo.subtitle}
+                  {destination.subtitle}
                 </p>
-                <a
-                  href={promo.link}
-                  className="mt-2 block text-blue-600 hover:underline"
-                >
-                  {promo.buttonLabel}
-                </a>
               </div>
             </div>
           </SwiperSlide>
@@ -94,4 +86,4 @@ const AirTicketPromo = () => {
   );
 };
 
-export default AirTicketPromo;
+export default Destinations;

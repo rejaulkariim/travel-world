@@ -1,8 +1,8 @@
 "use client";
 
 import About from "./About";
-import AirTicketPromo from "./AirTicketPromo";
 import CallToAction from "./CallToAction";
+import Destinations from "./Destinations";
 import HeroSlider from "./HeroSlider";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
@@ -15,13 +15,11 @@ const Hero = () => {
       <HeroSlider />
       <div className="wrapper">
         <Services />
-        <AirTicketPromo />
+        <Destinations />
         <About />
         <TravelTips />
         <Testimonials />
-        <div className="py-20">
-          <CallToAction />
-        </div>
+        <CallToAction />
       </div>
       <WhatsAppIcon />
     </div>

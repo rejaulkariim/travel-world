@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section id="services" className="py-12">
+    <section id="services" className="section-padding">
       <div className="max-w-xl mx-auto text-center space-y-2">
         <h2 className="text-2xl font-bold text-muted-foreground">
           Our Services
@@ -19,7 +19,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-card rounded-xl shadow-md p-4 h-fit md:min-h-[330px]"
+            className="bg-card rounded-xl shadow-md p-3 h-fit md:min-h-[320px]"
           >
             <div className="h-40">
               <Image
@@ -28,7 +28,7 @@ const Services = () => {
                 width={1200}
                 alt={service.title}
                 priority
-                className="object-cover rounded-xl h-full w-full"
+                className="object-cover rounded-lg h-full w-full"
               />
             </div>
 

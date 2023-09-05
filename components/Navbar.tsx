@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="hidden md:flex gap-4 items-center uppercase text-sm text-muted-foreground font-semibold tracking-wider">
           <Link href="/">Home</Link>
           <Link href="#services">Services</Link>
-          <Link href="/">Air Ticket</Link>
+          <Link href="#destination">Destination</Link>
           <Link href="/">About</Link>
           <Link href="/contact">Contact</Link>
         </div>
