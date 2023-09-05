@@ -1,28 +1,30 @@
+"use client";
+
 import { AiFillStar } from "react-icons/ai";
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Emily Johnson",
+      name: "Azman",
       testimonial:
-        "The travel package I booked through your app exceeded my expectations. The accommodations and activities were top-notch.",
+        "In my recent trip they made everything effortless from booking flights and hotels to arranging tours and transportation. I highly recommend their services!",
     },
     {
-      name: "Alex Carter",
+      name: "Safiyyah",
       testimonial:
-        "I can't believe how smoothly my vacation went. Your team took care of everything, allowing me to fully enjoy my time without any worries.",
+        "Handled my business trip impeccably. Flights, accommodations, and transfers were all expertly managed, allowing me to focus on work stress-free.",
     },
     {
-      name: "Sophia Martinez",
+      name: "Hafiz",
       testimonial:
-        "The travel package I booked through your app exceeded my expectations. The accommodations and activities were top-notch.",
+        "My family enjoyed a wonderful vacation. They found us great deals, organized a memorable tour, and made travel easy. We'll definitely use them again!",
     },
   ];
 
   return (
     <div className="py-16">
       <div className="">
-        <h2 className="text-center text-2xl font-bold text-muted-foreground mb-4">
+        <h2 className="text-center text-2xl md:text-4xl font-bold text-muted-foreground mb-4">
           What Our Clients Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
