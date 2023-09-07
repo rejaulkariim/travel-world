@@ -8,10 +8,3 @@ export const getAllTravelGuides = async () => {
 };
 
 // Get single travel guides
-export const getAllTravelGuide = async (id) => {
-  const guide = await prisma.findUnique({
-    where: { id },
-  });
-
-  return guide;
-};

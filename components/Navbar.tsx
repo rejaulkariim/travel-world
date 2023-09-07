@@ -68,9 +68,9 @@ const Navbar = () => {
             className="flex flex-col items-center space-y-2 p-2"
           >
             <LuContact className="text-lg text-muted-foreground" />
-            <p href="/contact" className="text-xs text-muted-foreground">
+            <Link href="/contact" className="text-xs text-muted-foreground">
               Contact
-            </p>
+            </Link>
           </Link>
         </div>
       </div>

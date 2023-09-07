@@ -107,10 +107,9 @@ const ContactForm = () => {
           <textarea
             id="message"
             name="message"
-            rows="4"
             value={formData.message}
             onChange={handleChange}
-            className="w-full py-2 px-3 border border-gray-300 rounded-lg resize-none focus:ring focus:ring-blue-300 focus:border-blue-300"
+            className="w-full py-2 h-56 px-3 border border-gray-300 rounded-lg resize-none focus:ring focus:ring-blue-300 focus:border-blue-300"
             placeholder="Your Message"
           ></textarea>
         </div>
