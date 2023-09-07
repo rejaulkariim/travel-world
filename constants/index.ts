@@ -146,7 +146,7 @@ export const destinations = [
 export const teams = [
   {
     id: 1,
-    name: "MUHAMMAD NUR SYAHID BIN MOHD SAFIE",
+    name: "Nursyafiela Binti Mohd Safie",
     position: "Director",
     image:
       "https://res.cloudinary.com/swiftpos/image/upload/v1693909236/Miah_Travel/n8ly6dk3gixjn10w5j8h.jpg",

@@ -12,11 +12,11 @@ const Team = () => {
           Meet the Professionals Behind Our Success
         </p>
       </div>
-      <div className="flex justify-center gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {teams.map((team, index) => (
           <div
             key={index}
-            className="bg-card shadow-lg rounded-lg overflow-hidden h-72 w-96 p-2"
+            className="bg-card shadow-md rounded-lg overflow-hidden h-72 md:w-64 p-2 mt-2 md:mt-0"
           >
             <div className="p-4 h-44 w-44 mx-auto">
               <Image
@@ -29,10 +29,12 @@ const Team = () => {
               />
             </div>
             <div className="text-center">
-              <h2 className="text-base font-semibold uppercase text-muted-foreground">
+              <h2 className="text-sm font-semibold uppercase text-muted-foreground">
                 {team.name}
               </h2>
-              <p className="text-muted-foreground">{team.position}</p>
+              <p className="text-sm md:text-sm text-muted-foreground">
+                {team.position}
+              </p>
             </div>
           </div>
         ))}

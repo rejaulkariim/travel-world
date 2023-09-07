@@ -35,7 +35,11 @@ const HeroSlider = () => {
               priority
               className="object-cover h-full w-full"
             />
-            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60" />
+            <div className="absolute top-0 left-0 right-0 w-full h-full bg-black opacity-60">
+              <h2 className="text-4xl md:text-[150px] font-extrabold text-center pt-16 text-gray-500/80 animate-bounce">
+                FLY WITH MW
+              </h2>
+            </div>
             <div className="absolute w-full top-72 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center space-y-4">
               <h2 className="text-2xl md:text-5xl font-bold">{slide.title}</h2>
               <p className="text-sm md:text-lg mt-2">{slide.subtitle}</p>
