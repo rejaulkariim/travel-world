@@ -12,7 +12,7 @@ import WhatsAppIcon from "./WhatsAppIcon";
 
 const Hero = () => {
   return (
-    <div className="md:mt-16">
+    <div className="md:mt-16" id="hero">
       <HeroSlider />
       <div className="wrapper">
         <Services />
