@@ -1,5 +1,6 @@
 "use client";
 
+import { Link as ScrollLinks } from "react-scroll";
 import Link from "next/link";
 import { BiHomeHeart } from "react-icons/bi";
 import { FaHospitalUser } from "react-icons/fa";
@@ -13,18 +14,66 @@ const Navbar = () => {
     <header>
       <nav className="flex md:fixed top-0 left-0 right-0 justify-between items-center h-16 px-4 md:px-10 bg-card z-40 backdrop-blur">
         <div>
-          <Link href="/">
+          <ScrollLinks
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer"
+            // href="/"
+          >
             <h1 className="text-xl uppercase font-bold tracking-widest">
               Miah <span className="text-amber-500">World</span>
             </h1>
-          </Link>
+          </ScrollLinks>
         </div>
 
         <div className="hidden md:flex gap-4 items-center uppercase text-sm text-muted-foreground font-semibold tracking-wider">
-          <Link href="/">Home</Link>
-          <Link href="#services">Services</Link>
-          <Link href="#destination">Destination</Link>
-          <Link href="#about">About</Link>
+          <ScrollLinks
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer"
+            // href="/"
+          >
+            Home
+          </ScrollLinks>
+          <ScrollLinks
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer"
+            // href=""
+          >
+            Services
+          </ScrollLinks>
+          <ScrollLinks
+            to="destination"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer"
+            // href="#destination"
+          >
+            Destination
+          </ScrollLinks>
+          <ScrollLinks
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer"
+            // href="#about"
+          >
+            About
+          </ScrollLinks>
           <Link href="/contact">Contact</Link>
         </div>
 
@@ -34,34 +83,55 @@ const Navbar = () => {
       </nav>
       <div className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-card z-40 flex items-center p-2">
         <div className="flex justify-between gap-4 items-center h-full w-full">
-          <Link href="/" className="flex flex-col items-center space-y-2 p-2">
+          <ScrollLinks
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            // href="/"
+            className="cursor-pointer flex flex-col items-center space-y-2 p-2"
+          >
             <BiHomeHeart className="text-lg text-muted-foreground" />
             <p className="text-xs text-muted-foreground">Home</p>
-          </Link>
+          </ScrollLinks>
 
-          <Link
-            href="#services"
-            className="flex flex-col items-center space-y-2 p-2"
+          <ScrollLinks
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer flex flex-col items-center space-y-2 p-2"
           >
             <HiOutlineUserGroup className="text-lg text-muted-foreground" />
             <p className="text-xs text-muted-foreground">Services</p>
-          </Link>
+          </ScrollLinks>
 
-          <Link
-            href="#destination"
-            className="flex flex-col items-center space-y-2 p-2"
+          <ScrollLinks
+            to="destination"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer flex flex-col items-center space-y-2 p-2"
           >
             <GiAirplaneDeparture className="text-lg text-muted-foreground" />
             <p className="text-xs text-muted-foreground">Destination</p>
-          </Link>
+          </ScrollLinks>
 
-          <Link
-            href="#about"
-            className="flex flex-col items-center space-y-2 p-2"
+          <ScrollLinks
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer flex flex-col items-center space-y-2 p-2"
           >
             <FaHospitalUser className="text-lg text-muted-foreground" />
             <p className="text-xs text-muted-foreground">About</p>
-          </Link>
+          </ScrollLinks>
+
           <Link
             href="/contact"
             className="flex flex-col items-center space-y-2 p-2"
