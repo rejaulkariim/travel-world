@@ -108,7 +108,7 @@ const Navbar = () => {
           </ScrollLinks>
 
           <ScrollLinks
-            to="about"
+            // to="about"
             spy={true}
             smooth={true}
             offset={50}
