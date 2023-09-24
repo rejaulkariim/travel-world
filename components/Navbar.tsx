@@ -1,6 +1,6 @@
 "use client";
 
-import { Link as ScrollLinks } from "react-scroll";
+import { Link as ScrollLinks, animateScroll } from "react-scroll";
 import Link from "next/link";
 import { BiHomeHeart } from "react-icons/bi";
 import { FaHospitalUser } from "react-icons/fa";
@@ -11,36 +11,28 @@ import { ModeToggle } from "./ModeToggle";
 
 const Navbar = () => {
   return (
-    <header>
+    <header id="main">
       <nav className="flex md:fixed top-0 left-0 right-0 justify-between items-center h-16 px-4 md:px-10 bg-card z-40 backdrop-blur">
         <div>
-          <ScrollLinks
-            to="hero"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
+          <Link
+            onClick={animateScroll.scrollToTop}
             className="cursor-pointer"
-            // href="/"
+            href="/"
           >
             <h1 className="text-xl uppercase font-bold tracking-widest">
               Miah <span className="text-amber-500">World</span>
             </h1>
-          </ScrollLinks>
+          </Link>
         </div>
 
         <div className="hidden md:flex gap-4 items-center uppercase text-sm text-muted-foreground font-semibold tracking-wider">
-          <ScrollLinks
-            to="hero"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
+          <Link
+            href="/"
+            onClick={animateScroll.scrollToTop}
             className="cursor-pointer"
-            // href="/"
           >
             Home
-          </ScrollLinks>
+          </Link>
           <ScrollLinks
             to="services"
             spy={true}
@@ -48,7 +40,6 @@ const Navbar = () => {
             offset={50}
             duration={500}
             className="cursor-pointer"
-            // href=""
           >
             Services
           </ScrollLinks>
@@ -70,7 +61,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             className="cursor-pointer"
-            // href="#about"
+            href="/about"
           >
             About
           </ScrollLinks>
@@ -83,18 +74,14 @@ const Navbar = () => {
       </nav>
       <div className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-card z-40 flex items-center p-2">
         <div className="flex justify-between gap-4 items-center h-full w-full">
-          <ScrollLinks
-            to="hero"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            // href="/"
+          <Link
+            href="/"
+            onClick={animateScroll.scrollToTop}
             className="cursor-pointer flex flex-col items-center space-y-2 p-2"
           >
             <BiHomeHeart className="text-lg text-muted-foreground" />
             <p className="text-xs text-muted-foreground">Home</p>
-          </ScrollLinks>
+          </Link>
 
           <ScrollLinks
             to="services"
