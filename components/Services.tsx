@@ -5,13 +5,13 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section id="services" className="section-padding">
+    <section id="services" className="wrapper section-padding">
       <div className="max-w-xl mx-auto text-center space-y-2">
-        <h2 className="text-2xl md:text-4xl font-bold text-muted-foreground">
-          Our Travel Services
+        <h2 className="text-2xl md:text-4xl font-bold text-foreground uppercase">
+          Our <span className="text-gradient">Travel</span> Services
         </h2>
-        <p className="text-sm md:text-base text-muted-foreground">
-          Your Gateway to Memorable Journeys
+        <p className="text-sm md:text-base text-foreground">
+          Your Gateway to Memorable Journeys!
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
@@ -32,12 +32,10 @@ const Services = () => {
             </div>
 
             <div className="space-y-1 mt-2">
-              <h3 className="text-base text-muted-foreground uppercase tracking-wider font-bold">
+              <h3 className="text-lg font-bold text-gradient uppercase tracking-wider">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground text-sm md:text-base">
-                {service.description}
-              </p>
+              <p className="text-foreground text-sm">{service.description}</p>
             </div>
           </div>
         ))}

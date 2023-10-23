@@ -18,21 +18,20 @@ export function ModeToggle() {
 
   return (
     <Button
-      variant="outline"
+      variant="ghost"
       className="h-8 w-8 px-0"
       onClick={handleThemeChange}
     >
       {theme === "light" ? (
         <>
-          <button>
-            <BsFillMoonFill size={20} className="rotate-0 scale-100" />
-          </button>
+          <BsFillMoonFill
+            size={25}
+            className="rotate-0 scale-100 text-primary "
+          />
         </>
       ) : (
         <>
-          <button>
-            <BiSun size={20} />
-          </button>
+          <BiSun size={25} className="rotate-0 scale-100 text-secondary " />
         </>
       )}
     </Button>

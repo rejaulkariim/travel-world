@@ -66,17 +66,19 @@ export const sliders = [
   {
     id: 1,
     image:
-      "https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://res.cloudinary.com/swiftpos/image/upload/v1698009033/Miah_Travel/fwndimtrtjgirsrtzv4g.jpg",
     title: "Explore. Wander. Experience.",
+    slogan: "Fly With MW",
     subtitle: "Unforgettable Adventures Await",
     link: "/contact",
   },
   {
     id: 2,
     image:
-      "https://images.pexels.com/photos/1842332/pexels-photo-1842332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://res.cloudinary.com/swiftpos/image/upload/v1698009240/Miah_Travel/uglypdcnew8ter1tko5k.jpg",
     title: "Let Your Journey Begin with Us",
     subtitle: "Discover the World's Wonders",
+    slogan: "Fly With MW",
     link: "/contact",
   },
   {
@@ -85,6 +87,7 @@ export const sliders = [
       "https://images.pexels.com/photos/2132051/pexels-photo-2132051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Embrace the Extraordinary",
     subtitle: "Where Dreams and Destinations Converge",
+    slogan: "Fly With MW",
     link: "/contact",
   },
   {
@@ -93,6 +96,7 @@ export const sliders = [
       "https://images.pexels.com/photos/4128285/pexels-photo-4128285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Escape to Paradise",
     subtitle: "Your Dream Vacation Awaits",
+    slogan: "Fly With MW",
     link: "/contact",
   },
   {
@@ -101,6 +105,7 @@ export const sliders = [
       "https://images.pexels.com/photos/18198497/pexels-photo-18198497/free-photo-of-phi-phi-island.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Travel Beyond Boundaries",
     subtitle: "Discover the Extraordinary",
+    slogan: "Fly With MW",
     link: "/contact",
   },
 ];

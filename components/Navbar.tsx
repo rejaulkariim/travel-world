@@ -1,18 +1,18 @@
 "use client";
 
-import { Link as ScrollLinks, animateScroll } from "react-scroll";
 import Link from "next/link";
 import { BiHomeHeart } from "react-icons/bi";
 import { FaHospitalUser } from "react-icons/fa";
 import { GiAirplaneDeparture } from "react-icons/gi";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { LuContact } from "react-icons/lu";
+import { Link as ScrollLinks, animateScroll } from "react-scroll";
 import { ModeToggle } from "./ModeToggle";
 
 const Navbar = () => {
   return (
     <header id="main">
-      <nav className="flex md:fixed top-0 left-0 right-0 justify-between items-center h-16 px-4 md:px-10 bg-card z-40 backdrop-blur">
+      <nav className="bg-card flex md:fixed top-0 left-0 right-0 justify-between items-center h-16 px-4 md:px-10 z-40 backdrop-blur">
         <div>
           <Link
             onClick={animateScroll.scrollToTop}
@@ -20,7 +20,8 @@ const Navbar = () => {
             href="/"
           >
             <h1 className="text-xl uppercase font-bold tracking-widest">
-              Miah <span className="text-amber-500">World</span>
+              <span className="text-gradient">Fly</span> with{" "}
+              <span className="text-gradient">MW</span>
             </h1>
           </Link>
         </div>

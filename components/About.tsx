@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const About = () => {
   return (
@@ -18,8 +19,8 @@ const About = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl md:text-4xl text-muted-foreground font-bold mb-4">
-              About Our Miah Travel 🌍
+            <h2 className="text-2xl md:text-4xl font-bold text-foreground uppercase mb-4">
+              About <span className="text-gradient">Miah Travel</span> 🌍
             </h2>
             <p className="text-sm md:text-base text-muted-foreground leading-8">
               We&apos;re dedicated to crafting extraordinary journeys worldwide.
@@ -34,9 +35,9 @@ const About = () => {
                 href="https://www.facebook.com/miahworld1102"
                 className="mt-4 inline-block"
               >
-                <button className="bg-amber-500 hover:bg-blue-500 py-3 px-6 rounded-lg border-none">
+                <Button variant="primary" className="uppercase">
                   Start Your Journey
-                </button>
+                </Button>
               </Link>
             </div>
           </div>

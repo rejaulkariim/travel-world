@@ -3,12 +3,7 @@
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import {
-  Autoplay,
-  EffectCoverflow,
-  FreeMode,
-  Pagination,
-} from "swiper/modules";
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { destinations } from "@/constants";
@@ -16,17 +11,17 @@ import Image from "next/image";
 
 const Destinations = () => {
   return (
-    <section id="destination" className="section-padding">
+    <section id="destination" className="wrapper section-padding">
       <div className="max-w-xl mx-auto text-center space-y-2 pb-10">
-        <h2 className="text-2xl md:text-4xl font-bold text-muted-foreground ">
-          Popular Destinations
+        <h2 className="text-2xl md:text-4xl font-bold text-foreground uppercase">
+          Popular <span className="text-gradient">Destinations</span>
         </h2>
-        <p className="text-sm md:text-base text-muted-foreground">
-          Explore the Must-Visit Places
+        <p className="text-sm text-foreground">
+          Explore the Must-Visit Places.
         </p>
       </div>
       <Swiper
-        effect={"coverflow"}
+        // effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={1}
@@ -42,7 +37,7 @@ const Destinations = () => {
           },
         }}
         autoplay={{
-          delay: 3000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         coverflowEffect={{
@@ -52,10 +47,10 @@ const Destinations = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        modules={[EffectCoverflow, Pagination, Autoplay, FreeMode]}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination, Autoplay, FreeMode]}
       >
         {destinations.map((destination) => (
           <SwiperSlide key={destination.id}>
@@ -71,10 +66,10 @@ const Destinations = () => {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-bold text-muted-foreground mb-2">
+                <h3 className="text-xl font-bold text-gradient mb-2">
                   {destination.title}
                 </h3>
-                <p className="text-sm md:text-base text-muted-foreground">
+                <p className="text-sm md:text-base text-foreground">
                   {destination.subtitle}
                 </p>
               </div>
