@@ -1,7 +1,6 @@
 "use client";
 import { ModeToggle } from "@/components/ModeToggle";
 import Sidebar from "@/components/Sidebar";
-import { UserButton } from "@clerk/nextjs";
 
 export default function RootLayout({
   children,
@@ -30,7 +29,6 @@ export default function RootLayout({
           </div>
           <div className="flex items-center gap-4">
             <ModeToggle />
-            <UserButton afterSignOutUrl="/" />
           </div>
         </header>
 
