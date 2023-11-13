@@ -7,7 +7,6 @@ import Services from "@/components/Services";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import TravelTips from "@/components/TravelTips";
-import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
       <TravelTips />
       <Testimonials />
       <CallToAction />
-      <WhatsAppIcon />
       <Footer />
     </main>
   );

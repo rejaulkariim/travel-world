@@ -1,136 +1,93 @@
-"use client";
-
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import Link from "next/link";
-import { BiHomeHeart } from "react-icons/bi";
-import { FaHospitalUser } from "react-icons/fa";
-import { GiAirplaneDeparture } from "react-icons/gi";
-import { HiOutlineUserGroup } from "react-icons/hi";
-import { LuContact } from "react-icons/lu";
-import { Link as ScrollLinks, animateScroll } from "react-scroll";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { ModeToggle } from "./ModeToggle";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
+  const navLink = [
+    {
+      id: 1,
+      link: "/",
+      text: "Home",
+    },
+    {
+      id: 2,
+      link: "#services",
+      text: "Services",
+    },
+    {
+      id: 3,
+      link: "#destination",
+      text: "Dsestination",
+    },
+    {
+      id: 4,
+      link: "/Contact",
+      text: "Contact",
+    },
+    {
+      id: 1,
+      link: "#about",
+      text: "About Us",
+    },
+  ];
   return (
-    <header id="main">
-      <nav className="bg-card flex md:fixed top-0 left-0 right-0 justify-between items-center h-16 px-4 md:px-10 z-40 backdrop-blur">
-        <div>
+    <header className="flex items-center bg-background h-20 sticky top-0 right-0 left-0 z-50 md:px-0 ">
+      <nav className="wrapper w-full flex justify-between items-center">
+        <div className="flex gap-10 items-center">
           <Link
-            onClick={animateScroll.scrollToTop}
-            className="cursor-pointer"
             href="/"
+            className="w-full text-xl md:text-2xl font-bold tracking-wider uppercase text-foreground"
           >
-            <h1 className="text-xl uppercase font-bold tracking-widest">
-              <span className="text-gradient">Fly</span> with{" "}
-              <span className="text-gradient">MW</span>
-            </h1>
+            Fly <span className="text-primary font-bold">With MW</span>
           </Link>
         </div>
 
-        <div className="hidden md:flex gap-4 items-center uppercase text-sm text-muted-foreground font-semibold tracking-wider">
-          <Link
-            href="/"
-            onClick={animateScroll.scrollToTop}
-            className="cursor-pointer"
-          >
-            Home
-          </Link>
-          <ScrollLinks
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            className="cursor-pointer"
-          >
-            Services
-          </ScrollLinks>
-          <ScrollLinks
-            to="destination"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            className="cursor-pointer"
-            // href="#destination"
-          >
-            Destination
-          </ScrollLinks>
-          <ScrollLinks
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            className="cursor-pointer"
-            href="/about"
-          >
-            About
-          </ScrollLinks>
-          <Link href="/contact">Contact</Link>
+        <div className="hidden md:flex gap-4">
+          {navLink.map((item) => (
+            <Link href={item.link} key={item.id}>
+              <p>{item.text}</p>
+            </Link>
+          ))}
         </div>
-
-        <div className="flex items-center">
+        <div className="flex justify-between gap-4 items-center uppercase">
           <ModeToggle />
+          <Link href="https://www.facebook.com/miahworld1102" target="_blank">
+            <Button variant="primary" size="lg" className="hidden md:block">
+              Get in Touch
+            </Button>
+          </Link>
+
+          {/* Mobile Nav */}
+          <Sheet>
+            <SheetTrigger asChild className="md:hidden">
+              <GiHamburgerMenu size={30} />
+            </SheetTrigger>
+            <SheetContent side="left">
+              <SheetHeader>
+                <div className="flex flex-col items-start gap-4 text-foreground">
+                  {navLink.map((item) => (
+                    <SheetClose asChild key={item.id}>
+                      <Link href={item.link}>
+                        <Button className="w-full" variant="primary" size="lg">
+                          {item.text}
+                        </Button>
+                      </Link>
+                    </SheetClose>
+                  ))}
+                </div>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
-      <div className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-card z-40 flex items-center p-2">
-        <div className="flex justify-between gap-4 items-center h-full w-full">
-          <Link
-            href="/"
-            onClick={animateScroll.scrollToTop}
-            className="cursor-pointer flex flex-col items-center space-y-2 p-2"
-          >
-            <BiHomeHeart className="text-lg text-muted-foreground" />
-            <p className="text-xs text-muted-foreground">Home</p>
-          </Link>
-
-          <ScrollLinks
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            className="cursor-pointer flex flex-col items-center space-y-2 p-2"
-          >
-            <HiOutlineUserGroup className="text-lg text-muted-foreground" />
-            <p className="text-xs text-muted-foreground">Services</p>
-          </ScrollLinks>
-
-          <ScrollLinks
-            to="destination"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            className="cursor-pointer flex flex-col items-center space-y-2 p-2"
-          >
-            <GiAirplaneDeparture className="text-lg text-muted-foreground" />
-            <p className="text-xs text-muted-foreground">Destination</p>
-          </ScrollLinks>
-
-          <ScrollLinks
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            className="cursor-pointer flex flex-col items-center space-y-2 p-2"
-          >
-            <FaHospitalUser className="text-lg text-muted-foreground" />
-            <p className="text-xs text-muted-foreground">About</p>
-          </ScrollLinks>
-
-          <Link
-            href="/contact"
-            className="flex flex-col items-center space-y-2 p-2"
-          >
-            <LuContact className="text-lg text-muted-foreground" />
-            <Link href="/contact" className="text-xs text-muted-foreground">
-              Contact
-            </Link>
-          </Link>
-        </div>
-      </div>
     </header>
   );
 };

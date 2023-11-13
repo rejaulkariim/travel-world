@@ -3,58 +3,27 @@
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { Autoplay, FreeMode, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import { destinations } from "@/constants";
 import Image from "next/image";
+import SectionHeader from "./SectionHeader";
 
 const Destinations = () => {
   return (
     <section id="destination" className="wrapper section-padding">
-      <div className="max-w-xl mx-auto text-center space-y-2 pb-10">
-        <h2 className="text-2xl md:text-4xl font-bold text-foreground uppercase">
-          Popular <span className="text-gradient">Destinations</span>
-        </h2>
-        <p className="text-sm text-foreground">
-          Explore the Must-Visit Places.
-        </p>
-      </div>
-      <Swiper
-        // effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={1}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
+      <SectionHeader
+        headerInfo={{
+          title: "DESTINATION",
+          subtitle: "Explore the Must-Visit Places.",
+          description:
+            "Discover must-visit places with us. Dive into captivating landscapes and vibrant cultures. Your next adventure starts here!",
         }}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination, Autoplay, FreeMode]}
-      >
+      />
+
+      <div className="grid grid-cols-1 md:grid-cols-4 mt-10 gap-4">
         {destinations.map((destination) => (
-          <SwiperSlide key={destination.id}>
-            <div className="bg-card rounded-xl shadow-lg overflow-hidden">
+          <div key={destination.id}>
+            <div className="bg-card rounded-2xl shadow-lg overflow-hidden">
               <div className="relative h-60">
                 <Image
                   src={destination.image}
@@ -74,9 +43,9 @@ const Destinations = () => {
                 </p>
               </div>
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </div>
     </section>
   );
 };

@@ -5,23 +5,21 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="py-12 mb-10 md:mb-0">
-      <div className="max-w-6xl mx-auto px-4">
+    <footer className="py-10">
+      <div className="wrapper">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <h3 className="text-lg font-bold text-foreground mb-4">About Us</h3>
-            <p className="text-sm text-foreground leading-5">
-              Crafting Extraordinary Journeys Worldwide. Beaches, Mountains,
-              Cities – We&apos;ve Got You Covered. Our Secret Ingredient?
-              Quality, Personalized Service, Attention to Detail. Let&apos;s
-              Make Memories Together!
+            <p>
+              Personalized Service, Attention to Detail. Let&apos;s Make
+              Memories Together!
             </p>
           </div>
           <div>
             <h3 className="text-lg font-bold text-foreground mb-4">
               Contact Us
             </h3>
-            <p className="text-sm text-foreground">
+            <p>
               Phone: +60166256738
               <br />
               Email: miahtravels8@gmail.com
@@ -35,20 +33,22 @@ const Footer = () => {
               <Link
                 href="https://www.facebook.com/miahworld1102"
                 target="_blank"
+                className="p-2 bg-card rounded-full"
               >
-                <BsFacebook size={30} className="tex-gradient" />
+                <BsFacebook size={30} className="text-primary" />
               </Link>
               <Link
                 href="https://www.instagram.com/miaworldtravel/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
                 target="_blank"
+                className="p-2 bg-card rounded-full"
               >
-                <BsInstagram size={30} className="tex-gradient" />
+                <BsInstagram size={30} className="text-primary" />
               </Link>
             </div>
           </div>
         </div>
         <hr className="my-8 border-card" />
-        <p className="text-sm text-center text-foreground">
+        <p>
           &copy; {new Date().getFullYear()} Mia Travel World. All rights
           reserved.
         </p>

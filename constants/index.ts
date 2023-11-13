@@ -66,15 +66,6 @@ export const sliders = [
   {
     id: 1,
     image:
-      "https://res.cloudinary.com/swiftpos/image/upload/v1698009033/Miah_Travel/fwndimtrtjgirsrtzv4g.jpg",
-    title: "Explore. Wander. Experience.",
-    slogan: "Fly With MW",
-    subtitle: "Unforgettable Adventures Await",
-    link: "/contact",
-  },
-  {
-    id: 2,
-    image:
       "https://res.cloudinary.com/swiftpos/image/upload/v1698009240/Miah_Travel/uglypdcnew8ter1tko5k.jpg",
     title: "Let Your Journey Begin with Us",
     subtitle: "Discover the World's Wonders",
@@ -82,9 +73,19 @@ export const sliders = [
     link: "/contact",
   },
   {
+    id: 2,
+    image:
+      "https://res.cloudinary.com/swiftpos/image/upload/v1698009033/Miah_Travel/fwndimtrtjgirsrtzv4g.jpg",
+    title: "Explore. Wander. Experience.",
+    slogan: "Fly With MW",
+    subtitle: "Unforgettable Adventures Await",
+    link: "/contact",
+  },
+
+  {
     id: 3,
     image:
-      "https://images.pexels.com/photos/2132051/pexels-photo-2132051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/13201262/pexels-photo-13201262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Embrace the Extraordinary",
     subtitle: "Where Dreams and Destinations Converge",
     slogan: "Fly With MW",
@@ -93,7 +94,7 @@ export const sliders = [
   {
     id: 4,
     image:
-      "https://images.pexels.com/photos/4128285/pexels-photo-4128285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/11213163/pexels-photo-11213163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Escape to Paradise",
     subtitle: "Your Dream Vacation Awaits",
     slogan: "Fly With MW",
@@ -102,7 +103,7 @@ export const sliders = [
   {
     id: 5,
     image:
-      "https://images.pexels.com/photos/18198497/pexels-photo-18198497/free-photo-of-phi-phi-island.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/518296/pexels-photo-518296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Travel Beyond Boundaries",
     subtitle: "Discover the Extraordinary",
     slogan: "Fly With MW",
@@ -125,6 +126,7 @@ export const destinations = [
     title: "Explore Singapore",
     subtitle: "A Modern Oasis with a Rich Heritage",
   },
+
   {
     id: 3,
     image:
@@ -133,18 +135,68 @@ export const destinations = [
     subtitle: "Island Adventures and Cultural Treasures Await",
   },
   {
-    id: 1,
+    id: 4,
     image:
       "https://images.pexels.com/photos/130159/pexels-photo-130159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Journey Through Thailand",
     subtitle: "Savor the Flavors of Thailand's Culture and Nature",
   },
   {
-    id: 1,
+    id: 5,
     image:
       "https://images.pexels.com/photos/3226403/pexels-photo-3226403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Explore Cambodia's Wonders",
     subtitle: "Unveil the Rich Heritage and Serene Beauty of Cambodia",
+  },
+  {
+    id: 6,
+    image:
+      "https://images.pexels.com/photos/13405879/pexels-photo-13405879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Vietnam Discovery",
+    subtitle: "Where History Meets Natural Splendor",
+  },
+  {
+    id: 7,
+    image:
+      "https://images.pexels.com/photos/2516406/pexels-photo-2516406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Adventures in the Philippines",
+    subtitle: "Discover the Pearl of the Orient's Hidden Gems",
+  },
+  {
+    id: 8,
+    image:
+      "https://images.pexels.com/photos/17830385/pexels-photo-17830385/free-photo-of-lalbagh-fort-in-dhaka.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Bangladesh Discovery",
+    subtitle:
+      "Journey Through the Rich Culture and Natural Beauty of Bangladesh",
+  },
+  {
+    id: 9,
+    image:
+      "https://images.pexels.com/photos/5253174/pexels-photo-5253174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Laos Escapade",
+    subtitle: "Traverse the Tranquil Beauty of Laos",
+  },
+  {
+    id: 10,
+    image:
+      "https://images.pexels.com/photos/19041999/pexels-photo-19041999/free-photo-of-rocky-mountains-around-lake.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Brunei: Nature's Bounty",
+    subtitle: "Experience the Serenity and Green Splendor of Brunei",
+  },
+  {
+    id: 11,
+    image:
+      "https://images.pexels.com/photos/18996744/pexels-photo-18996744/free-photo-of-observatory-with-two-telescopes-on-a-desert.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Timor-Leste Exploration",
+    subtitle: "Discover the Unspoiled Wonders of Timor-Leste",
+  },
+  {
+    id: 12,
+    image:
+      "https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Maldives Bliss",
+    subtitle: "Surrender to the Paradise of the Maldives",
   },
 ];
 

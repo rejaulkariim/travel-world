@@ -3,7 +3,6 @@
 import { useTheme } from "next-themes";
 import { BiSun } from "react-icons/bi";
 import { BsFillMoonFill } from "react-icons/bs";
-import { Button } from "./ui/button";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
@@ -17,23 +16,19 @@ export function ModeToggle() {
   };
 
   return (
-    <Button
-      variant="ghost"
-      className="h-8 w-8 px-0"
-      onClick={handleThemeChange}
-    >
+    <div onClick={handleThemeChange} className="cursor-pointer">
       {theme === "light" ? (
         <>
           <BsFillMoonFill
-            size={25}
+            size={30}
             className="rotate-0 scale-100 text-primary "
           />
         </>
       ) : (
         <>
-          <BiSun size={25} className="rotate-0 scale-100 text-secondary " />
+          <BiSun size={30} className="rotate-0 scale-100 text-primary " />
         </>
       )}
-    </Button>
+    </div>
   );
 }

@@ -2,40 +2,43 @@
 
 import { testimonials } from "@/constants/testimonails";
 import { AiFillStar } from "react-icons/ai";
+// import { Autoplay, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import SectionHeader from "./SectionHeader";
 
 const Testimonials = () => {
   return (
-    <section className="wrapper section-padding">
-      <div className="max-w-xl mx-auto text-center space-y-2">
-        <h2 className="text-2xl md:text-4xl font-bold text-foreground uppercase">
-          What Our <span className="text-gradient">Clients</span> Say.
-        </h2>
-        <p className="text-sm md:text-base text-foreground">
-          Hear from Those Who Have Experienced Our Service!
-        </p>
-      </div>
+    <section className="section-padding">
+      <div className="wrapper">
+        <SectionHeader
+          headerInfo={{
+            title: "TESTIMONAILS",
+            subtitle: "Who Have Experienced Our Service!",
+            description:
+              "Discover the Stories and Experiences Shared by Those Who Have Immersed Themselves in the Exceptional Service of Our Travel Journey Experts!",
+          }}
+        />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="bg-card rounded-lg p-6 shadow-md text-foreground"
-          >
-            <p className="mb-2 text-sm  text-foreground">
-              {testimonial.review}
-            </p>
-            <div className="flex mb-2">
-              <AiFillStar className=" text-amber-500" />
-              <AiFillStar className=" text-amber-500" />
-              <AiFillStar className=" text-amber-500" />
-              <AiFillStar className=" text-amber-500" />
-              <AiFillStar className=" text-amber-500" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bg-card rounded-2xl py-6 px-4 shadow-md"
+            >
+              <p>{testimonial.review}</p>
+              <div className="flex mb-2">
+                <AiFillStar className=" text-amber-500" />
+                <AiFillStar className=" text-amber-500" />
+                <AiFillStar className=" text-amber-500" />
+                <AiFillStar className=" text-amber-500" />
+                <AiFillStar className=" text-amber-500" />
+              </div>
+              <p>{testimonial.name}</p>
             </div>
-            <p className="text-sm font-medium text-foreground">
-              {testimonial.name}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

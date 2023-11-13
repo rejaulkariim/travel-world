@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
+import Notice from "@/components/Notice";
+import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { ClerkProvider } from "@clerk/nextjs";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -22,16 +24,17 @@ export default function RootLayout({
   contactModal: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body className={poppins.className}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Navbar />
-            {contactModal}
-            {children}
-          </ThemeProvider>
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body className={`${poppins.className} antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ScrollToTop />
+          <Notice />
+          <WhatsAppIcon />
+          <Navbar />
+          {contactModal}
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }

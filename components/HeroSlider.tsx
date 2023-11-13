@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { sliders } from "../constants";
-import Overlay from "./Overlay";
 import { Button } from "./ui/button";
 
 const HeroSlider = () => {
@@ -39,14 +38,18 @@ const HeroSlider = () => {
                 priority
                 className="object-cover h-full w-full"
               />
-              <Overlay />
+              {/* <Overlay /> */}
               <div className="absolute w-full top-80 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center space-y-4">
-                <h2 className="max-w-4xl mx-auto text-4xl md:text-7xl font-bold uppercase leading-10">
+                <h2 className="max-w-5xl mx-auto text-4xl md:text-7xl font-bold uppercase leading-10">
                   {slide.title}
                 </h2>
-                <p className="text-sm md:text-lg mt-2">{slide.subtitle}</p>
+                <h3 className="text-sm md:text-2xl mt-2">{slide.subtitle}</h3>
                 <Link href={slide.link} className="mt-8 inline-block">
-                  <Button variant="primary" className="uppercase">
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    className="hidden md:block text-white rounded-2xl"
+                  >
                     Book Your Next Adventure
                   </Button>
                 </Link>

@@ -45,10 +45,10 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 200, 91%, 63%, 1;
+    --primary: 334, 100%, 50%, 1;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 232, 60%, 29%, 1;
+    --secondary: 334, 100%, 68%, 1;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
@@ -68,7 +68,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border scroll-smooth;
   }
   body {
     @apply bg-background text-foreground;
@@ -81,7 +81,7 @@
 }
 
 .section-padding {
-  @apply py-10;
+  @apply py-20 md:py-28;
 }
 
 .text-gradient {
@@ -90,4 +90,8 @@
 
 .bg-gradient {
   @apply bg-gradient-to-r from-primary to-secondary;
+}
+
+p {
+  @apply text-sm md:text-lg text-foreground;
 }
