@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Notice from "@/components/Notice";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
@@ -28,7 +27,6 @@ export default function RootLayout({
       <body className={`${poppins.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ScrollToTop />
-          <Notice />
           <WhatsAppIcon />
           <Navbar />
           {contactModal}

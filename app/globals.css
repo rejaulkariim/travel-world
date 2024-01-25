@@ -77,7 +77,7 @@
 
 /* COMMON STYLES */
 .wrapper {
-  @apply container mx-auto px-4 md:px-0;
+  @apply max-w-screen-2xl mx-auto px-4 md:px-0;
 }
 
 .section-padding {
@@ -92,6 +92,17 @@
   @apply bg-gradient-to-r from-primary to-secondary;
 }
 
-p {
-  @apply text-sm md:text-lg text-foreground;
+.testimonial .swiper-pagination-bullet {
+  @apply h-2.5 w-2.5 bg-primary opacity-100;
+}
+.testimonial .swiper-pagination-bullet-active {
+  @apply w-5 rounded-full bg-primary;
+}
+
+.testimonial .swiper-pagination {
+  @apply relative mt-6;
+}
+
+.p-regular-14 {
+  @apply text-[14px] font-normal leading-[20px] text-foreground;
 }

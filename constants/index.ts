@@ -203,17 +203,17 @@ export const destinations = [
 export const teams = [
   {
     id: 1,
-    name: "Nursyafiela Binti Mohd Safie",
-    position: "Director",
+    name: "MD MUKIT MIAH",
+    position: "OTA Operations Manager (B2B and B2C)",
     image:
-      "https://res.cloudinary.com/swiftpos/image/upload/v1693909236/Miah_Travel/n8ly6dk3gixjn10w5j8h.jpg",
+      "https://res.cloudinary.com/swiftpos/image/upload/v1706173910/Miah_Travel/bj9iytxuc9pt9v1driha.png",
   },
   {
     id: 2,
-    name: "MD MUKIT MIAH",
-    position: "Managing Director",
+    name: "Nursyafiela Binti Mohd Safie",
+    position: "OTA Development Manager",
     image:
-      "https://res.cloudinary.com/swiftpos/image/upload/v1693902411/Miah_Travel/uggjhfmi8stmiwpsym1y.jpg",
+      "https://res.cloudinary.com/swiftpos/image/upload/v1693909236/Miah_Travel/n8ly6dk3gixjn10w5j8h.jpg",
   },
   {
     id: 3,
@@ -223,10 +223,40 @@ export const teams = [
       "https://res.cloudinary.com/swiftpos/image/upload/v1693907709/Miah_Travel/msnwpkmoiwpdcwt8vbef.jpg",
   },
   {
-    id: 3,
+    id: 4,
+    name: "FAISAL KABIR",
+    position: "Customer Support",
+    image:
+      "https://res.cloudinary.com/swiftpos/image/upload/v1706172368/Miah_Travel/wk6c0lw33wx9ujezkoha.jpg",
+  },
+  {
+    id: 5,
     name: "Rejaul Karim",
     position: "Web Developer",
     image:
       "https://res.cloudinary.com/swiftpos/image/upload/v1692862212/swiftPos/qz28aoumfalrbyqqm6jx.png",
+  },
+];
+
+export const headerLinks = [
+  {
+    route: "/",
+    label: "Home",
+  },
+  {
+    route: "#services",
+    label: "Services",
+  },
+  {
+    route: "#destination",
+    label: "Dsestination",
+  },
+  {
+    route: "/Contact",
+    label: "Contact",
+  },
+  {
+    route: "#about",
+    label: "About Us",
   },
 ];
