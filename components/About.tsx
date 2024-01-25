@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import MaxWidthWrapper from "./shared/MaxWidthWrapper";
 import { Button } from "./ui/button";
 
 const About = () => {
   return (
     <section id="about" className="section-padding">
-      <div className="wrapper px-4">
+      <MaxWidthWrapper>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="mb-4">
             <Image
@@ -23,7 +24,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-foreground uppercase mb-4">
               About <span className="text-gradient">Miah Travel</span> 🌍
             </h2>
-            <p>
+            <p className="p-regular-14">
               We&apos;re dedicated to crafting extraordinary journeys worldwide.
               Whether it&apos;s a serene beach escape, an epic mountain
               adventure, or vibrant city exploration, we&apos;ve got you
@@ -43,7 +44,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

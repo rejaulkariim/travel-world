@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
+import MaxWidthWrapper from "./shared/MaxWidthWrapper";
 
 const Footer = () => {
   return (
     <footer className="py-10">
-      <div className="wrapper">
+      <MaxWidthWrapper>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <h3 className="text-lg font-bold text-foreground mb-4">About Us</h3>
@@ -52,7 +53,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Mia Travel World. All rights
           reserved.
         </p>
-      </div>
+      </MaxWidthWrapper>
     </footer>
   );
 };

@@ -42,7 +42,7 @@ const Team = () => {
                 },
                 // when window width is >= 768px
                 768: {
-                  slidesPerView: 4,
+                  slidesPerView: 3,
                 },
               }}
               // className="max-w-4xl mx-auto"

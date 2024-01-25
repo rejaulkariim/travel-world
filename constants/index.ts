@@ -2,28 +2,28 @@ export const services = [
   {
     title: "Flight Tickets",
     description:
-      "Affordable and convenient bookings for domestic and international flights.",
+      "We offer affordable and convenient booking options for both domestic and international flights.",
     image:
       "https://images.pexels.com/photos/11937613/pexels-photo-11937613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    title: "Hotels",
+    title: "Hotel Booking",
     description:
-      "Comfortable accommodations tailored to your preferences and budget.",
+      "We provide comfortable accommodations that are tailored to your preferences and budget",
     image:
       "https://images.pexels.com/photos/18080725/pexels-photo-18080725/free-photo-of-skyscrapers-on-the-coast-in-hallandale-beach-florida-usa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    title: "Tour",
+    title: "Tour Guide",
     description:
-      "Memorable guided tours to immerse you in local culture and attractions.",
+      "We offer memorable guided tours that are designed to immerse you in the local culture and attractions.",
     image:
       "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     title: "Transportation",
     description:
-      "Hassle-free travel with car rentals, airport transfers, and chauffeur services.",
+      "A comfortable transfer from the airport, or a professional chauffeur to take you around town.",
     image:
       "https://images.pexels.com/photos/18038881/pexels-photo-18038881/free-photo-of-sports-shelby-mustang-on-parking-lot.jpeg",
   },
@@ -138,14 +138,14 @@ export const destinations = [
     id: 4,
     image:
       "https://images.pexels.com/photos/130159/pexels-photo-130159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Journey Through Thailand",
+    title: "Journey to Thailand",
     subtitle: "Savor the Flavors of Thailand's Culture and Nature",
   },
   {
     id: 5,
     image:
       "https://images.pexels.com/photos/3226403/pexels-photo-3226403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Explore Cambodia's Wonders",
+    title: "Cambodia's Wonders",
     subtitle: "Unveil the Rich Heritage and Serene Beauty of Cambodia",
   },
   {
@@ -159,7 +159,7 @@ export const destinations = [
     id: 7,
     image:
       "https://images.pexels.com/photos/2516406/pexels-photo-2516406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Adventures in the Philippines",
+    title: "Adventures in Philippines",
     subtitle: "Discover the Pearl of the Orient's Hidden Gems",
   },
   {

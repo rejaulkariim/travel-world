@@ -32,10 +32,10 @@ export default function ScrollToTop() {
     <button
       className={`${
         isVisible ? "fixed bottom-5 right-5" : "hidden"
-      } p-1 bg-primary text-white rounded-full focus:outline-none focus:ring-2 focus:ring-primary/90 transition duration-300 ease-in-out z-10`}
+      } p-2 bg-primary text-white rounded-full focus:outline-none focus:ring-2 focus:ring-primary/90 transition duration-300 ease-in-out z-10`}
       onClick={scrollToTop}
     >
-      <BsArrowUpShort size={25} />
+      <BsArrowUpShort size={30} />
     </button>
   );
 }

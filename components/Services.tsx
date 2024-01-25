@@ -3,20 +3,20 @@
 import { services } from "@/constants";
 import Image from "next/image";
 import SectionHeader from "./SectionHeader";
+import MaxWidthWrapper from "./shared/MaxWidthWrapper";
 
 const Services = () => {
   return (
     <section id="services" className="section-padding">
-      <div className="wrapper">
+      <MaxWidthWrapper>
         <SectionHeader
           headerInfo={{
             title: "OUR SERVICES",
-            subtitle: "Your Gateway to Memorable Journeys!",
+            subtitle: "Discover a personalized travel experiences with us.",
             description:
-              "Explore our curated travel services, unlocking unforgettable adventures designed just for you. Let us be your guide to creating lasting memories and seamless travel experiences.",
+              "Our travel services offer a personalized touch, designed to accommodate your unique needs and preferences. Let us help you make unforgettable memories and discover new horizons.",
           }}
         />
-
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
           {services.map((service, index) => (
             <div
@@ -35,15 +35,15 @@ const Services = () => {
               </div>
 
               <div className="space-y-1 mt-2">
-                <h3 className="text-lg font-bold text-gradient uppercase tracking-wider">
+                <h3 className="text-base font-bold text-gradient uppercase tracking-wider">
                   {service.title}
                 </h3>
-                <p>{service.description}</p>
+                <p className="p-regular-14">{service.description}</p>
               </div>
             </div>
           ))}
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

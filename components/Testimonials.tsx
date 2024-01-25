@@ -7,11 +7,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import SectionHeader from "./SectionHeader";
+import MaxWidthWrapper from "./shared/MaxWidthWrapper";
 
 const Testimonials = () => {
   return (
     <section className="section-padding">
-      <div className="wrapper">
+      <MaxWidthWrapper>
         <SectionHeader
           headerInfo={{
             title: "TESTIMONAILS",
@@ -39,7 +40,7 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

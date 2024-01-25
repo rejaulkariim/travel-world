@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MdFlightTakeoff } from "react-icons/md";
 import { ModeToggle } from "./ModeToggle";
 import MaxWidthWrapper from "./shared/MaxWidthWrapper";
 import MobileNav from "./shared/MobileNav";
@@ -10,6 +11,8 @@ const Navbar = () => {
       <MaxWidthWrapper className="flex items-center justify-between h-14">
         <Link href="/" className="text-xl font-bold flex items-center gap-2">
           <span className="p-2 bg-primary rounded-xl">
+            <MdFlightTakeoff className="h-4 w-4" />
+
             {/* <Icons.logo className="h-6 w-6 text-white " /> */}
           </span>
 
